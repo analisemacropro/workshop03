@@ -1,0 +1,281 @@
+---
+title: 'Do Zero à Análise de Dados Econômicos e Financeiros com Python'
+author: '<br><b>Fernando da Silva</b><br><span style = "font-size: 70%;">Data Scientist<br><a href="https://github.com/schoulten">{{< fa brands github >}}</a>&nbsp; <a href="https://www.linkedin.com/in/schoulten/">{{< fa brands linkedin >}}</a>&nbsp; <a href="mailto:fernando@fortietwo.com">{{< fa solid envelope >}}</a>&nbsp; <a href="https://analisemacro.com.br/">{{< fa solid house >}}</a></span>'
+lang: pt
+format: 
+  revealjs:
+    theme: [moon, qmd/personalizacao.scss]
+    logo: "https://analisemacro.com.br/wp-content/uploads/dlm_uploads/2021/10/logo_am.png"
+    footer: "[analisemacro.com.br](https://analisemacro.com.br/)"
+    transition: fade
+    footnotes-hover: true
+    progress: true
+    slide-number: true
+    embed-resources: false
+    code-copy: true
+    code-link: true
+    link-external-newwindow: true
+    width: 1300
+    margin: 0.05
+    fig-asp: 0.618
+    fig-width: 5
+    fig-height: 3
+    fig-dpi: 300
+    fig-align: center
+    df-print: paged
+    chalkboard: true
+execute:
+  echo: true
+  message: false
+  warning: false
+title-slide-attributes:
+  data-background-image: "imgs/capa.jpg"
+  data-background-color: "black"
+  data-background-opacity: "0.4"
+---
+
+## <mark>Neste workshop vamos...</mark>
+
+<br>
+
+::: incremental
+1.  **Sair do zero do [Python]{.highlight} e conhecer novas ferramentas**<br><br>
+2.  **Entender de ponta a ponta uma [análise de dados]{.highlight}**<br><br>
+3.  **Explorar o mundo da [modelagem preditiva]{.highlight}**<br><br>
+4.  **Criar um [projeto]{.highlight} de modelo de previsão**
+:::
+
+## <mark>O que é necessário?</mark>
+
+<br><br>
+
+::: incremental
+✅ **Conta no Google**<br><br>
+
+✅ **Inglês**<br><br>
+
+✅ **Praticar**
+:::
+
+## <mark>Combinados importantes!</mark>
+
+<br>
+
+-   **Pratique no final do workshop.**<br><br>
+-   **Material, código e informações estarão no link:**<br><br>
+
+::: {style="display: flex; justify-content: center; align-items: center;"}
+[**analisemacro.com.br/workshop-zero-python**](https://analisemacro.com.br/workshop-zero-python)
+:::
+
+::: footer
+:::
+
+# <mark style="background-color: #268bd2;">Parte 1<br><br> Ciclo de Análise de dados</mark> {background-color="black" background-image="imgs/parte01.jpg" background-opacity="0.2"}
+
+::: footer
+:::
+
+## <mark>O que é Análise de dados?</mark>
+
+<br><br>
+
+[**É o**]{style="font-size: 150%;"}[ **processo** ]{.highlight style="font-size: 150%;"}[**de inspecionar, processar e modelar dados com o objetivo de descobrir informações úteis e apoiar tomadas de decisão.**]{style="font-size: 150%;"}
+
+## <mark>Perguntas de análise de dados</mark>
+
+<br>
+
+::: incremental
+-   **Como a pandemia da COVID-19 [impactou]{.fragment .highlight-blue} a economia?**<br><br>
+
+-   **O que [acontece]{.fragment .highlight-blue} com a inflação se o governo liberar o FGTS?**<br><br>
+
+-   **Qual é a trajetória de juros necessária para a economia crescer 2% nos [próximos anos]{.fragment .highlight-blue}?**
+:::
+
+## <mark>Etapas da análise de dados</mark>
+
+![](imgs/ciclo_dados.png){fig-align="center"}
+
+## <mark>Etapas da análise de dados</mark>
+
+![](imgs/implantacao_ex.png){fig-align="center"}
+
+# <mark style="background-color: #268bd2;">Parte 2<br><br> Programação: Python e Colab</mark> {background-color="black" background-image="imgs/parte02.jpg" background-opacity="0.2"}
+
+::: footer
+:::
+
+## <mark>Python & Colab: 3 razões de uso</mark>
+
+::: columns
+::: {.column width="50%"}
+<br>
+
+![](imgs/ide.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+::: incremental
+<br><br>
+
+1.  **Reprodutibilidade**<br><br>
+
+2.  **Zero configurações**<br><br>
+
+3.  **Recursos computacionais**
+:::
+:::
+:::
+
+## <mark>Momento prática!</mark>
+
+<br><br><br>
+
+[**Vamos ver como funciona...**]{style="font-size: 150%;"}
+
+# <mark style="background-color: #268bd2;">Parte 3<br><br> Exploração de dados</mark> {background-color="black" background-image="imgs/parte03.jpg" background-opacity="0.2"}
+
+::: footer
+:::
+
+## <mark>Tipos de variáveis</mark> {background-color="white"}
+
+![](imgs/tipos_variaveis.png){fig-align="center"}
+
+::: footer
+:::
+
+## <mark>Tipos de gráficos</mark>
+
+<br><br>
+
+![](imgs/tipos_graficos.png){fig-align="center"}
+
+::: footer
+:::
+
+## <mark>Tipos de análise de dados</mark>
+
+<br>
+
+-   **Descritiva**: relatórios, dashboards;<br><br>
+-   **Preditiva**: previsão de juros, previsão de inflação;<br><br>
+-   **Prescritiva**: recomendação de investimentos / vídeos;<br><br>
+-   **Diagnóstica**: estudo de evento, avaliação de impacto, teste A/B.
+
+# <mark style="background-color: #268bd2;">Parte 4<br><br> Modelagem e Previsão</mark> {background-color="black" background-image="imgs/parte04.jpg" background-opacity="0.2"}
+
+::: footer
+:::
+
+## <mark>Fluxo de trabalho</mark> {background-color="white"}
+
+![](imgs/fluxo_preditivo.png){fig-align="center"}
+
+## <mark>Modelos preditivos</mark>
+
+<br>
+
+![](imgs/modelos.png){fig-align="center"}
+
+::: footer
+:::
+
+# <mark style="background-color: #268bd2;">Parte 5<br><br> Projeto: previsão do IPCA</mark> {background-color="black" background-image="imgs/parte05.jpg" background-opacity="0.2"}
+
+::: footer
+:::
+
+## <mark>Modelo AR</mark> {.smaller}
+
+::: {.columns}
+
+::: {.column width=40%}
+<br>
+
+- **Representação**:
+$$y_{t} = c + \phi_{1}y_{t-1} + \phi_{2}y_{t-2} + \dots \\+ \phi_{p}y_{t-p} + \varepsilon_{t}$$
+
+- **Intuição**: passado ajuda a prever o futuro.<br><br>
+
+- **Exemplo**: inércia inflacionária.
+
+:::
+
+::: {.column width=60%}
+
+![](imgs/ar.gif){fig-align="center"}
+
+:::
+
+:::
+
+## <mark>Modelo MA</mark> {.smaller}
+
+::: {.columns}
+
+::: {.column width=40%}
+<br>
+
+- **Representação**:
+$$y_{t} = c + \varepsilon_t + \theta_{1}\varepsilon_{t-1} +\\ \theta_{2}\varepsilon_{t-2} + \dots + \theta_{q}\varepsilon_{t-q}$$
+
+- **Intuição**: choques aleatórios explicam o futuro.<br><br>
+
+- **Exemplo**: Joesley day.
+
+:::
+
+::: {.column width=60%}
+
+![](imgs/ma.gif){fig-align="center"}
+
+:::
+
+:::
+
+## <mark>Modelo ARIMA</mark> {.smaller}
+
+::: {.columns}
+
+::: {.column width=40%}
+<br>
+
+- **Representação**:
+$$y'_{t} = c + \phi_{1}y'_{t-1} + \cdots + \phi_{p}y'_{t-p} \\ + \theta_{1}\varepsilon_{t-1} + \cdots + \theta_{q}\varepsilon_{t-q} + \varepsilon_{t}$$
+
+- **Intuição**: passado e choques ajudam a prever o futuro.<br><br>
+
+- **Exemplo**: inércia inflacionária + choques de demanda/oferta.
+
+:::
+
+::: {.column width=60%}
+
+![](imgs/arima.png){fig-align="center"}
+
+:::
+
+:::
+
+
+
+
+## <mark>Modelo SARIMA</mark> {.smaller}
+
+<br><br>
+
+- **Representação**:
+$$\text{SARIMA}\underbrace{(p, d, q)}_{\text{Não sazonal}}\underbrace{(P, D, Q)_{m}}_{\text{Sazonal}}$$
+
+- **Intuição**: sazonalidade ajuda a prever o futuro.<br><br>
+
+- **Exemplo**: reajuste anual de contratos de aluguel.
+
+## <mark>Momento prática!</mark>
+
+<br><br><br>
+
+[**Vamos ver como funciona...**]{style="font-size: 150%;"}
