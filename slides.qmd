@@ -65,7 +65,7 @@ title-slide-attributes:
 -   **Material, código e informações estarão no link:**<br><br>
 
 ::: {style="display: flex; justify-content: center; align-items: center;"}
-[**analisemacro.com.br/workshop-zero-python**](https://analisemacro.com.br/workshop-zero-python)
+[**github.com/analisemacropro/slides-zeroeconfinpy**](https://github.com/analisemacropro/slides-zeroeconfinpy)
 :::
 
 ::: footer
