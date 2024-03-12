@@ -52,7 +52,7 @@ title-slide-attributes:
 ::: incremental
 ✅ **Conta no Google**<br><br>
 
-✅ **Inglês**<br><br>
+✅ **Inglês básico**<br><br>
 
 ✅ **Praticar**
 :::
@@ -61,11 +61,11 @@ title-slide-attributes:
 
 <br>
 
--   **Pratique no final do workshop.**<br><br>
--   **Material, código e informações estarão no link:**<br><br>
+-   **Pratique no final**<br><br>
+-   **Materiais e etc:**<br><br>
 
 ::: {style="display: flex; justify-content: center; align-items: center;"}
-[**github.com/analisemacropro/slides-zeroeconfinpy**](https://github.com/analisemacropro/slides-zeroeconfinpy)
+[**www.github.com/analisemacropro/slides-zeroeconfinpy**](https://github.com/analisemacropro/slides-zeroeconfinpy)
 :::
 
 ::: footer
@@ -98,11 +98,56 @@ title-slide-attributes:
 
 ![](imgs/ciclo_dados.png){fig-align="center"}
 
-## <mark>Etapas da análise de dados</mark>
 
-![](imgs/implantacao_ex.png){fig-align="center"}
+# <mark style="background-color: #268bd2;">Parte 2<br><br> Exploração de dados</mark> {background-color="black" background-image="imgs/parte03.jpg" background-opacity="0.2"}
 
-# <mark style="background-color: #268bd2;">Parte 2<br><br> Programação: Python e Colab</mark> {background-color="black" background-image="imgs/parte02.jpg" background-opacity="0.2"}
+::: footer
+:::
+
+## <mark>Tipos de variáveis</mark> {background-color="white"}
+
+![](imgs/tipos_variaveis.png){fig-align="center"}
+
+::: footer
+:::
+
+## <mark>Tipos de gráficos</mark>
+
+<br><br>
+
+![](imgs/tipos_graficos.png){fig-align="center"}
+
+::: footer
+:::
+
+## <mark>Tipos de análise de dados</mark>
+
+<br>
+
+-   **Descritiva**: relatórios, dashboards;<br><br>
+-   **Preditiva**: previsão de juros, previsão de inflação;<br><br>
+-   **Prescritiva**: recomendação de investimentos / vídeos;<br><br>
+-   **Diagnóstica**: estudo de evento, avaliação de impacto, teste A/B.
+
+
+
+# <mark style="background-color: #268bd2;">Parte 3<br><br> Modelagem e Previsão</mark> {background-color="black" background-image="imgs/parte04.jpg" background-opacity="0.2"}
+
+::: footer
+:::
+
+## <mark>Modelos preditivos</mark>
+
+<br>
+
+![](imgs/modelos.png){fig-align="center"}
+
+::: footer
+:::
+
+
+
+# <mark style="background-color: #268bd2;">Parte 4<br><br> Programação: Python e Colab</mark> {background-color="black" background-image="imgs/parte02.jpg" background-opacity="0.2"}
 
 ::: footer
 :::
@@ -135,53 +180,7 @@ title-slide-attributes:
 
 [**Vamos ver como funciona...**]{style="font-size: 150%;"}
 
-# <mark style="background-color: #268bd2;">Parte 3<br><br> Exploração de dados</mark> {background-color="black" background-image="imgs/parte03.jpg" background-opacity="0.2"}
 
-::: footer
-:::
-
-## <mark>Tipos de variáveis</mark> {background-color="white"}
-
-![](imgs/tipos_variaveis.png){fig-align="center"}
-
-::: footer
-:::
-
-## <mark>Tipos de gráficos</mark>
-
-<br><br>
-
-![](imgs/tipos_graficos.png){fig-align="center"}
-
-::: footer
-:::
-
-## <mark>Tipos de análise de dados</mark>
-
-<br>
-
--   **Descritiva**: relatórios, dashboards;<br><br>
--   **Preditiva**: previsão de juros, previsão de inflação;<br><br>
--   **Prescritiva**: recomendação de investimentos / vídeos;<br><br>
--   **Diagnóstica**: estudo de evento, avaliação de impacto, teste A/B.
-
-# <mark style="background-color: #268bd2;">Parte 4<br><br> Modelagem e Previsão</mark> {background-color="black" background-image="imgs/parte04.jpg" background-opacity="0.2"}
-
-::: footer
-:::
-
-## <mark>Fluxo de trabalho</mark> {background-color="white"}
-
-![](imgs/fluxo_preditivo.png){fig-align="center"}
-
-## <mark>Modelos preditivos</mark>
-
-<br>
-
-![](imgs/modelos.png){fig-align="center"}
-
-::: footer
-:::
 
 # <mark style="background-color: #268bd2;">Parte 5<br><br> Projeto: previsão do IPCA</mark> {background-color="black" background-image="imgs/parte05.jpg" background-opacity="0.2"}
 
