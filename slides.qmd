@@ -41,8 +41,8 @@ title-slide-attributes:
 ::: incremental
 1.  **Sair do zero do [Python]{.highlight} e conhecer novas ferramentas**<br><br>
 2.  **Entender de ponta a ponta uma [análise de dados]{.highlight}**<br><br>
-3.  **Explorar o mundo da [modelagem preditiva]{.highlight}**<br><br>
-4.  **Criar um [projeto]{.highlight} de modelo de previsão**
+3.  **Explorar o mundo dos [modelos]{.highlight}**<br><br>
+4.  **Colocar a [mão na massa]{.highlight}**
 :::
 
 ## <mark>O que é necessário?</mark>
@@ -65,7 +65,7 @@ title-slide-attributes:
 -   **Materiais e etc:**<br><br>
 
 ::: {style="display: flex; justify-content: center; align-items: center;"}
-[**www.github.com/analisemacropro/slides-zeroeconfinpy**](https://github.com/analisemacropro/slides-zeroeconfinpy)
+[**analisemacro.com.br**](https://analisemacro.com.br/)
 :::
 
 ::: footer
@@ -98,6 +98,82 @@ title-slide-attributes:
 
 ![](imgs/ciclo_dados.png){fig-align="center"}
 
+## <mark> Qual ferramenta usar?</mark>
+
+::: columns
+::: {.column width="33%"}
+![](imgs/excel.png){fig-align="center" width="50%"}
+
+![](imgs/eviews.jpg){fig-align="center" width="40%"}
+
+![](imgs/looker.png){fig-align="center" width="65%"}
+:::
+
+::: {.column width="33%"}
+<br> ![](imgs/sas.svg){fig-align="center" width="70%"}
+
+<br> ![](imgs/stata.svg){fig-align="center" width="70%"}
+
+<br> ![](imgs/qlik.svg){fig-align="center" width="60%"}
+:::
+
+::: {.column width="33%"}
+![](imgs/matlab.png){fig-align="center" width="80%"}
+
+![](imgs/powerbi.png){fig-align="center" width="80%"}
+
+![](imgs/tableau.png){fig-align="center" width="80%"}
+:::
+:::
+
+## <mark> Por que usar programação?</mark>
+
+::: columns
+::: {.column width="33%"}
+• É ***open-source***<br><br>
+
+• É **flexível**<br><br>
+
+• É **reprodutível**<br><br>
+
+• É **popular**<br><br>
+
+• É **universal**
+:::
+
+::: {.column width="8%"}
+→<br><br>
+
+→<br><br>
+
+→<br><br>
+
+→<br><br>
+
+→
+:::
+
+::: {.column width="50%"}
+gratuito<br><br>
+
+nuvem ou PC<br><br>
+
+código re-executável<br><br>
+
+milhões de usuários<br><br>
+
+funções e pacotes para tudo
+:::
+:::
+
+## <mark> Por que o Python?</mark>
+
+<br>
+
+-   **Legível** para humanos<br><br>
+-   **Automatização** de rotinas e scripts<br><br>
+-   **Pacotes** completos para análise de dados<br><br>
+-   **Onipresente** entre analistas/cientistas/engenheiros
 
 # <mark style="background-color: #268bd2;">Parte 2<br><br> Exploração de dados</mark> {background-color="black" background-image="imgs/parte03.jpg" background-opacity="0.2"}
 
@@ -129,11 +205,44 @@ title-slide-attributes:
 -   **Prescritiva**: recomendação de investimentos / vídeos;<br><br>
 -   **Diagnóstica**: estudo de evento, avaliação de impacto, teste A/B.
 
-
-
 # <mark style="background-color: #268bd2;">Parte 3<br><br> Modelagem e Previsão</mark> {background-color="black" background-image="imgs/parte04.jpg" background-opacity="0.2"}
 
 ::: footer
+:::
+
+## <mark>Modelos em análise de dados</mark>
+
+<br>
+
+-   **O que são modelos**?
+
+    > *"\[...\] **todos os modelos são aproximações**. Essencialmente, todos os modelos estão errados, mas alguns são úteis. No entanto, a natureza aproximada do modelo deve ser sempre levada em consideração \[...\]"* - George E. P. Box.
+
+## <mark>Modelos em análise de dados</mark>
+
+<br>
+
+::: columns
+::: {.column width="60%"}
+-   **Para que servem?**
+
+    -   Analisar relações entre variáveis
+    -   Descrever características
+    -   Prever novos valores
+    -   Simular trajetórias
+:::
+
+::: {.column width="40%"}
+-   **Exemplos**
+
+    -   Google Maps
+
+    -   ChatGPT
+
+    -   Relatório Focus
+
+    -   Clima Tempo
+:::
 :::
 
 ## <mark>Modelos preditivos</mark>
@@ -144,8 +253,6 @@ title-slide-attributes:
 
 ::: footer
 :::
-
-
 
 # <mark style="background-color: #268bd2;">Parte 4<br><br> Programação: Python e Colab</mark> {background-color="black" background-image="imgs/parte02.jpg" background-opacity="0.2"}
 
@@ -180,8 +287,6 @@ title-slide-attributes:
 
 [**Vamos ver como funciona...**]{style="font-size: 150%;"}
 
-
-
 # <mark style="background-color: #268bd2;">Parte 5<br><br> Projeto: previsão do IPCA</mark> {background-color="black" background-image="imgs/parte05.jpg" background-opacity="0.2"}
 
 ::: footer
@@ -189,89 +294,67 @@ title-slide-attributes:
 
 ## <mark>Modelo AR</mark> {.smaller}
 
-::: {.columns}
-
-::: {.column width=40%}
+::: columns
+::: {.column width="40%"}
 <br>
 
-- **Representação**:
-$$y_{t} = c + \phi_{1}y_{t-1} + \phi_{2}y_{t-2} + \dots \\+ \phi_{p}y_{t-p} + \varepsilon_{t}$$
+-   **Representação**: $$y_{t} = c + \phi_{1}y_{t-1} + \phi_{2}y_{t-2} + \dots \\+ \phi_{p}y_{t-p} + \varepsilon_{t}$$
 
-- **Intuição**: passado ajuda a prever o futuro.<br><br>
+-   **Intuição**: passado ajuda a prever o futuro.<br><br>
 
-- **Exemplo**: inércia inflacionária.
-
+-   **Exemplo**: inércia inflacionária.
 :::
 
-::: {.column width=60%}
-
+::: {.column width="60%"}
 ![](imgs/ar.gif){fig-align="center"}
-
 :::
-
 :::
 
 ## <mark>Modelo MA</mark> {.smaller}
 
-::: {.columns}
-
-::: {.column width=40%}
+::: columns
+::: {.column width="40%"}
 <br>
 
-- **Representação**:
-$$y_{t} = c + \varepsilon_t + \theta_{1}\varepsilon_{t-1} +\\ \theta_{2}\varepsilon_{t-2} + \dots + \theta_{q}\varepsilon_{t-q}$$
+-   **Representação**: $$y_{t} = c + \varepsilon_t + \theta_{1}\varepsilon_{t-1} +\\ \theta_{2}\varepsilon_{t-2} + \dots + \theta_{q}\varepsilon_{t-q}$$
 
-- **Intuição**: choques aleatórios explicam o futuro.<br><br>
+-   **Intuição**: choques aleatórios explicam o futuro.<br><br>
 
-- **Exemplo**: Joesley day.
-
+-   **Exemplo**: Joesley day.
 :::
 
-::: {.column width=60%}
-
+::: {.column width="60%"}
 ![](imgs/ma.gif){fig-align="center"}
-
 :::
-
 :::
 
 ## <mark>Modelo ARIMA</mark> {.smaller}
 
-::: {.columns}
-
-::: {.column width=40%}
+::: columns
+::: {.column width="40%"}
 <br>
 
-- **Representação**:
-$$y'_{t} = c + \phi_{1}y'_{t-1} + \cdots + \phi_{p}y'_{t-p} \\ + \theta_{1}\varepsilon_{t-1} + \cdots + \theta_{q}\varepsilon_{t-q} + \varepsilon_{t}$$
+-   **Representação**: $$y'_{t} = c + \phi_{1}y'_{t-1} + \cdots + \phi_{p}y'_{t-p} \\ + \theta_{1}\varepsilon_{t-1} + \cdots + \theta_{q}\varepsilon_{t-q} + \varepsilon_{t}$$
 
-- **Intuição**: passado e choques ajudam a prever o futuro.<br><br>
+-   **Intuição**: passado e choques ajudam a prever o futuro.<br><br>
 
-- **Exemplo**: inércia inflacionária + choques de demanda/oferta.
-
+-   **Exemplo**: inércia inflacionária + choques de demanda/oferta.
 :::
 
-::: {.column width=60%}
-
+::: {.column width="60%"}
 ![](imgs/arima.png){fig-align="center"}
-
 :::
-
 :::
-
-
-
 
 ## <mark>Modelo SARIMA</mark> {.smaller}
 
 <br><br>
 
-- **Representação**:
-$$\text{SARIMA}\underbrace{(p, d, q)}_{\text{Não sazonal}}\underbrace{(P, D, Q)_{m}}_{\text{Sazonal}}$$
+-   **Representação**: $$\text{SARIMA}\underbrace{(p, d, q)}_{\text{Não sazonal}}\underbrace{(P, D, Q)_{m}}_{\text{Sazonal}}$$
 
-- **Intuição**: sazonalidade ajuda a prever o futuro.<br><br>
+-   **Intuição**: sazonalidade ajuda a prever o futuro.<br><br>
 
-- **Exemplo**: reajuste anual de contratos de aluguel.
+-   **Exemplo**: reajuste anual de contratos de aluguel.
 
 ## <mark>Momento prática!</mark>
 
